@@ -31,29 +31,29 @@ export default {
 .nav-bar {
     position: absolute;
     left: 0;
-    height: 96vh;
+    height: 100vh;
     background-color: var(--lighter-bg);
-    width: 76px;
-    padding: 2vh 0;
+    width: 75px;
     display: flex;
     flex-direction: column;
     user-select: none;
 }
 .logo {
     text-align: center;
-    flex-grow: 1;
+    background-color: var(--medium-bg);
+    padding: 20px 0;
+    flex: 0;
 }
 .logo-icon {
     font-size: 37px;
     width: 100%;
     color: var(--accent-light);
-    text-shadow: 5px 5px var(--accent-dark);
     margin-bottom: 8px;
     filter: drop-shadow(1px 1px red);
 }
 .lang-group {
     flex-grow: 1;
-    margin-left: 16px;
+    text-align: center;
 }
 .lang-button {
     transition: 0.3s;
@@ -69,10 +69,13 @@ export default {
     width: 100%;
     font-size: 34px;
     padding: 15px 0;
-    transition: 0.3s;
+    transition: 0.2s;
+    /* This is needed so the border will animate */
+    border-left: 0px var(--accent-light) solid;
 }
 .nav-button:hover {
     border-left: 5px var(--accent-light) solid;
+    padding-left: -5px;
 }
 .link-buttons {
     flex-grow: 0;

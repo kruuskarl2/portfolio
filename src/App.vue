@@ -18,6 +18,7 @@ export default {
 <style>
 :root {
     --lighter-bg: #1f2833;
+    --medium-bg: #151c24;
     --darker-bg: #0b0b0b;
     --text: #c5c6c7;
     --accent-light: #66fcf1;
