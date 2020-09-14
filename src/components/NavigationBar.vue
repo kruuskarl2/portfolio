@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
 .nav-bar {
-    position: absolute;
+    position: fixed;
     left: 0;
     height: 100vh;
     background-color: var(--lighter-bg);

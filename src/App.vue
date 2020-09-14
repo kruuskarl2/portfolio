@@ -1,16 +1,21 @@
 <template>
     <div id="app">
         <NavigationBar />
+        <div class="pages">
+            <HomePage />
+        </div>
     </div>
 </template>
 
 <script>
 import NavigationBar from "./components/NavigationBar.vue";
+import HomePage from "./components/HomePage.vue";
 
 export default {
     name: "App",
     components: {
-        NavigationBar
+        NavigationBar,
+        HomePage
     }
 };
 </script>
@@ -33,5 +38,8 @@ body {
 @font-face {
     font-family: "Armata";
     src: local("Armata"), url(./assets/Armata-Regular.ttf) format("truetype");
+}
+.pages {
+    margin-left: 90px;
 }
 </style>
