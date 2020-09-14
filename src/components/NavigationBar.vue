@@ -15,15 +15,26 @@
             <font-awesome-icon class="nav-button" icon="address-card" />
         </div>
         <div class="link-buttons">
-            <GithubIcon class="link-button" />
-            <LinkedInIcon class="link-button" />
+            <a href="https://github.com/kruuskarl2"
+                ><GithubLogo class="link-button"
+            /></a>
+            <a href="https://www.linkedin.com/in/karl-kruus-5427951ab/"
+                ><LinkedInIcon class="link-button"
+            /></a>
         </div>
     </div>
 </template>
 
 <script>
+import GithubLogo from "../assets/github.svg";
+import LinkedInIcon from "../assets/linkedIn.svg";
+
 export default {
-    name: "NavigationBar"
+    name: "NavigationBar",
+    components: {
+        GithubLogo,
+        LinkedInIcon
+    }
 };
 </script>
 
@@ -42,7 +53,6 @@ export default {
     text-align: center;
     background-color: var(--medium-bg);
     padding: 20px 0;
-    flex: 0;
 }
 .logo-icon {
     font-size: 37px;
@@ -54,6 +64,7 @@ export default {
 .lang-group {
     flex-grow: 1;
     text-align: center;
+    padding-top: 13px;
 }
 .lang-button {
     transition: 0.3s;
@@ -63,7 +74,7 @@ export default {
     color: var(--accent-light);
 }
 .nav-buttons {
-    flex-grow: 4;
+    flex-grow: 1;
 }
 .nav-button {
     width: 100%;
@@ -79,10 +90,17 @@ export default {
 }
 .link-buttons {
     flex-grow: 0;
+    text-align: center;
+    padding: 20px;
 }
 .link-button {
-    padding: 15px 0;
-    width: 100%;
-    color: white !important;
+    flex-grow: 1;
+    width: 25px;
+    transition: 0.3s;
+    fill: var(--text);
+    margin: 20px 0 0;
+}
+.link-button:hover {
+    fill: var(--accent-light);
 }
 </style>
