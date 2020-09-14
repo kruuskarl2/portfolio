@@ -5,8 +5,20 @@
             <span>KARL</span>
         </div>
         <div class="lang-group">
-            <div class="lang-button">EN</div>
-            <div class="lang-button">EST</div>
+            <div
+                class="lang-button"
+                v-bind:class="{ 'selected-lang': localeIsEnglish }"
+                v-on:click="changeLocale('en')"
+            >
+                EN
+            </div>
+            <div
+                class="lang-button"
+                v-bind:class="{ 'selected-lang': localeIsEstonian }"
+                v-on:click="changeLocale('est')"
+            >
+                EST
+            </div>
         </div>
         <div class="nav-buttons">
             <font-awesome-icon class="nav-button" icon="home" />
@@ -34,6 +46,21 @@ export default {
     components: {
         GithubLogo,
         LinkedInIcon
+    },
+    computed: {
+        localeIsEnglish: function() {
+            const locale = this.$i18n.locale;
+            return locale === "en";
+        },
+        localeIsEstonian: function() {
+            const locale = this.$i18n.locale;
+            return locale === "est";
+        }
+    },
+    methods: {
+        changeLocale: function(locale) {
+            this.$i18n.locale = locale;
+        }
     }
 };
 </script>
@@ -102,5 +129,8 @@ export default {
 }
 .link-button:hover {
     fill: var(--accent-light);
+}
+.selected-lang {
+    color: var(--accent-light);
 }
 </style>

@@ -2,7 +2,7 @@
     <div class="home-page">
         <img class="portrait" src="../assets/portrait.png" />
         <div class="introduction">
-            I'm <span>Karl</span>, a junior front end developer.
+            {{ $t("introduction") }}
         </div>
     </div>
 </template>
