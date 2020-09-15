@@ -1,9 +1,13 @@
 <template>
     <div class="home-page">
-        <img class="portrait" src="../assets/portrait.png" />
-        <div class="introduction">
-            {{ $t("introduction") }}
+        <div class="main-content">
+            <img class="portrait" src="../assets/portrait.png" />
+            <div class="introduction">
+                <span class="introduction-text">{{ $t("introduction") }}</span>
+            </div>
         </div>
+        <span class="site-explanation">{{ $t("siteExplanation") }}</span>
+        <font-awesome-icon class="scroll-down" icon="angle-down" />
     </div>
 </template>
 
@@ -18,22 +22,33 @@ export default {
     height: 100vh;
     position: relative;
 }
+.main-content {
+    height: 80vh;
+    padding: 10vh 20vw;
+    display: flex;
+}
 .portrait {
-    position: absolute;
-    width: 500px;
-    left: 10vw;
-    top: 20vh;
+    height: 100%;
 }
 .introduction {
-    font-size: 80px;
-    color: white;
-    position: absolute;
-    left: 30vw;
-    top: 40vh;
-    width: 50vw;
+    font-size: 9vh;
+    margin: 10vh 0 10vh -15%;
+    text-align: center;
+    /* Set the display to table to make use of it's vertical align feature */
+    display: table;
+    height: 60vh;
+    max-width: 600px;
 }
-span {
-    color: var(--accent-light);
-    font-weight: bold;
+.introduction-text {
+    vertical-align: middle;
+    display: table-cell;
+}
+.site-explanation {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10vw;
+    font-size: 1vh;
+    text-align: right;
 }
 </style>

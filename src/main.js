@@ -3,6 +3,7 @@ import App from "./App.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
     faAddressCard,
+    faAngleDown,
     faCode,
     faGraduationCap,
     faHome,
@@ -24,6 +25,7 @@ library.add(faHome);
 library.add(faLaptopCode);
 library.add(faGraduationCap);
 library.add(faAddressCard);
+library.add(faAngleDown);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

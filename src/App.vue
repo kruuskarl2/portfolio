@@ -34,6 +34,7 @@ body {
     background-color: var(--darker-bg);
     color: var(--text);
     font-family: Armata, Helvetica;
+    overflow: hidden;
 }
 @font-face {
     font-family: "Armata";
@@ -41,5 +42,13 @@ body {
 }
 .pages {
     margin-left: 90px;
+}
+/* These are the arrows that are used on each page */
+.scroll-down {
+    position: absolute;
+    bottom: 10px;
+    left: 48vw;
+    height: 4vw;
+    width: 4vw !important;
 }
 </style>
