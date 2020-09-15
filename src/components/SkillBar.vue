@@ -14,7 +14,7 @@
 export default {
     name: "NavigationBar",
     props: {
-        percentage: Number,
+        percentage: String,
         label: {
             default: "",
             type: String

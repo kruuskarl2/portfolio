@@ -75,6 +75,7 @@ export default {
     display: flex;
     flex-direction: column;
     user-select: none;
+    z-index: 1;
 }
 .logo {
     text-align: center;
@@ -132,5 +133,34 @@ export default {
 }
 .selected-lang {
     color: var(--accent-light);
+}
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        flex-direction: row;
+        height: 75px;
+        width: 100%;
+    }
+    .logo > span {
+        display: none;
+    }
+    .logo-icon {
+        width: auto;
+        margin: 0 10px;
+    }
+    .nav-buttons {
+        display: none;
+    }
+    .link-button {
+        margin: 7px;
+    }
+    .lang-group {
+        flex-grow: 50;
+        text-align: left;
+        padding: 0 20px;
+    }
+    .lang-button {
+        margin: 11px 0;
+    }
 }
 </style>
