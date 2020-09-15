@@ -7,7 +7,8 @@ import {
     faCode,
     faGraduationCap,
     faHome,
-    faLaptopCode
+    faLaptopCode,
+    faAngleUp
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import VueI18n from "vue-i18n";
@@ -26,6 +27,7 @@ library.add(faLaptopCode);
 library.add(faGraduationCap);
 library.add(faAddressCard);
 library.add(faAngleDown);
+library.add(faAngleUp);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

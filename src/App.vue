@@ -3,6 +3,7 @@
         <NavigationBar />
         <div class="pages">
             <HomePage />
+            <SkillsPage />
         </div>
     </div>
 </template>
@@ -10,12 +11,14 @@
 <script>
 import NavigationBar from "./components/NavigationBar.vue";
 import HomePage from "./components/HomePage.vue";
+import SkillsPage from "./components/SkillsPage.vue";
 
 export default {
     name: "App",
     components: {
         NavigationBar,
-        HomePage
+        HomePage,
+        SkillsPage
     }
 };
 </script>
@@ -27,7 +30,7 @@ export default {
     --darker-bg: #0b0b0b;
     --text: #c5c6c7;
     --accent-light: #66fcf1;
-    --accent-dark: #45a29e;
+    --accent-dark: #183837;
 }
 body {
     margin: 0;
@@ -42,13 +45,27 @@ body {
 }
 .pages {
     margin-left: 90px;
+    overflow: auto;
+    height: 100vh;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.pages::-webkit-scrollbar {
+    display: none;
 }
 /* These are the arrows that are used on each page */
 .scroll-down {
     position: absolute;
     bottom: 10px;
-    left: 48vw;
-    height: 4vw;
-    width: 4vw !important;
+    left: 49vw;
+    height: 2vw;
+    width: 2vw !important;
+}
+.scroll-up {
+    position: absolute;
+    top: 10px;
+    left: 49vw;
+    height: 2vw;
+    width: 2vw !important;
 }
 </style>

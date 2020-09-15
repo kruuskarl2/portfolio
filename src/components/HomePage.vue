@@ -3,10 +3,12 @@
         <div class="main-content">
             <img class="portrait" src="../assets/portrait.png" />
             <div class="introduction">
-                <span class="introduction-text">{{ $t("introduction") }}</span>
+                <span class="introduction-text">{{
+                    $t("home.introduction")
+                }}</span>
             </div>
         </div>
-        <span class="site-explanation">{{ $t("siteExplanation") }}</span>
+        <span class="site-explanation">{{ $t("home.explanation") }}</span>
         <font-awesome-icon class="scroll-down" icon="angle-down" />
     </div>
 </template>
