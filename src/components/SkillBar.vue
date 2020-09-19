@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    name: "NavigationBar",
+    name: "SkillBar",
     props: {
         percentage: String,
         label: {

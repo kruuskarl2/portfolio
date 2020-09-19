@@ -4,6 +4,7 @@
         <div class="pages">
             <HomePage />
             <SkillsPage />
+            <ExperiencePage />
         </div>
     </div>
 </template>
@@ -12,13 +13,15 @@
 import NavigationBar from "./components/NavigationBar.vue";
 import HomePage from "./components/HomePage.vue";
 import SkillsPage from "./components/SkillsPage.vue";
+import ExperiencePage from "./components/ExperiencePage.vue";
 
 export default {
     name: "App",
     components: {
         NavigationBar,
         HomePage,
-        SkillsPage
+        SkillsPage,
+        ExperiencePage
     }
 };
 </script>

@@ -37,7 +37,7 @@
 import SkillBar from "./SkillBar.vue";
 
 export default {
-    name: "NavigationBar",
+    name: "SkillsPage",
     components: {
         SkillBar
     }
