@@ -38,7 +38,4 @@ export default {
 img {
     width: 200px;
 }
-.text {
-
-}
 </style>

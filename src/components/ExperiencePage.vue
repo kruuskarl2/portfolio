@@ -13,7 +13,7 @@
                 v-bind:title="$t('exp.uptime.title')"
             />
         </div>
-        <span>{{ $t('exp.text') }}</span>
+        <span>{{ $t("exp.text") }}</span>
         <font-awesome-icon class="scroll-up" icon="angle-up" />
         <font-awesome-icon class="scroll-down" icon="angle-down" />
     </div>
